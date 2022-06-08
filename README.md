@@ -45,4 +45,4 @@ Do initialization only (internal use).
 
 ## See also
 
-* [mattn/vim-nekokak]: https://github.com/mattn/vim-nekokak
+* [mattn/vim-nekokak][]
