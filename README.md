@@ -66,17 +66,15 @@ You see more passionate him.
 
 ## Functions
 
-### `start()`
+### `start(opts)`
 
 You can start NEKOKAK.
 
 ```lua
-:lua require'nekokak'.start()
+:lua require "nekokak".start { wait_ms = 10, direction = 'loop' }
 ```
 
-### `setup()`
-
-Do initialization only (internal use).
+`opts` are the same one as for `:Nekokak`.
 
 ## See also
 
