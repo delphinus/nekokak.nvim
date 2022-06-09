@@ -15,7 +15,12 @@ This is a fork of [mattn/vim-nekokak][] implemented by Lua.
 ### for [packer.nvim][]
 
 ```lua
-use { "delphinus/nekokak.nvim" }
+use {
+  "delphinus/nekokak.nvim",
+  config = function()
+    require "nekokak".setup {}
+  end,
+}
 ```
 
 [packer.nvim]: https://github.com/wbthomason/packer.nvim
@@ -27,7 +32,37 @@ git clone https://github.com/delphinus/nekokak.nvim \
   $HOME/.local/share/nvim/site/pack/foobar/start/nekokak.nvim
 ```
 
+```lua
+-- And in your init.lua……
+require "nekokak".setup {}
+```
+
 [packages]: https://neovim.io/doc/user/repeat.html#packages
+
+## Commands
+
+### `Nekokak`
+
+```vim
+:Nekokak
+```
+
+You see him.
+
+```vim
+:Nekokak { wait_ms = 10, direction = 'loop' }
+```
+
+You see more passionate him.
+
+#### Options
+
+* `wait_ms` (default: `100`)
+  - Milliseconds to wait between frames.
+* `direction` (default: `'expand'`)
+  - Direction to animate him. Either `'expand'`, `'reduct'` or `'loop'` is available.
+* `count` (default: `3`)
+  - Count to loop. This is ignored when `direction` is not `'loop'`.
 
 ## Functions
 
