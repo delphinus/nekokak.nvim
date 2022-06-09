@@ -21,7 +21,7 @@ Nekokak.new = function()
     wait_ms = 100,
     direction = "expand",
     loop = false,
-    count = 5,
+    count = 3,
   }
   return self
 end
