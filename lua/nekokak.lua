@@ -20,7 +20,6 @@ Nekokak.new = function()
   self.default_options = {
     wait_ms = 100,
     direction = "expand",
-    loop = false,
     count = 3,
   }
   return self
@@ -43,14 +42,6 @@ function Nekokak:start(opts)
       end,
       "should be a positive number or zero",
     },
-    loop = { opts.loop, "boolean" },
-    count = {
-      opts.count,
-      function(v)
-        return type(v) == "number" and v > 0
-      end,
-      "should be a positive number",
-    },
     direction = {
       opts.direction,
       function(v)
@@ -58,6 +49,13 @@ function Nekokak:start(opts)
         return available[v] or false
       end,
       "should be either `expand`, `reduct` or `loop`",
+    },
+    count = {
+      opts.count,
+      function(v)
+        return type(v) == 'number' and v > 0
+      end
+      'should be a positive number',
     },
   }
   self:load_data()
