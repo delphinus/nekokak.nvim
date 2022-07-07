@@ -54,7 +54,7 @@ function Nekokak:start(opts)
       opts.count,
       function(v)
         return type(v) == 'number' and v > 0
-      end
+      end,
       'should be a positive number',
     },
   }
