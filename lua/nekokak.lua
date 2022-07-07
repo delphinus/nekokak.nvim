@@ -160,8 +160,102 @@ function Nekokak:load_data()
               image.colors[chars] = color
             elseif color == "black" then
               image.colors[chars] = "black"
+            elseif color == "gainsboro" then
+              image.colors[chars] = "#DCDCDC"
+            elseif color == "gray" then
+              image.colors[chars] = "#BEBEBE"
+            elseif color == "gray1" then
+              image.colors[chars] = "#030303"
+            elseif color == "gray58" then
+              image.colors[chars] = "#949494"
+            elseif color == "gray59" then
+              image.colors[chars] = "#969696"
+            elseif color == "gray60" then
+              image.colors[chars] = "#999999"
+            elseif color == "gray61" then
+              image.colors[chars] = "#9C9C9C"
+            elseif color == "gray62" then
+              image.colors[chars] = "#9E9E9E"
+            elseif color == "gray63" then
+              image.colors[chars] = "#A1A1A1"
+            elseif color == "gray64" then
+              image.colors[chars] = "#A3A3A3"
+            elseif color == "gray65" then
+              image.colors[chars] = "#A6A6A6"
+            elseif color == "gray66" then
+              image.colors[chars] = "#A8A8A8"
+            elseif color == "gray67" then
+              image.colors[chars] = "#ABABAB"
+            elseif color == "gray68" then
+              image.colors[chars] = "#ADADAD"
+            elseif color == "gray69" then
+              image.colors[chars] = "#B0B0B0"
+            elseif color == "gray70" then
+              image.colors[chars] = "#B3B3B3"
+            elseif color == "gray71" then
+              image.colors[chars] = "#B5B5B5"
+            elseif color == "gray72" then
+              image.colors[chars] = "#B8B8B8"
+            elseif color == "gray73" then
+              image.colors[chars] = "#BABABA"
+            elseif color == "gray74" then
+              image.colors[chars] = "#BDBDBD"
+            elseif color == "gray75" then
+              image.colors[chars] = "#BFBFBF"
+            elseif color == "gray76" then
+              image.colors[chars] = "#C2C2C2"
+            elseif color == "gray77" then
+              image.colors[chars] = "#C4C4C4"
+            elseif color == "gray78" then
+              image.colors[chars] = "#C7C7C7"
+            elseif color == "gray79" then
+              image.colors[chars] = "#C9C9C9"
+            elseif color == "gray80" then
+              image.colors[chars] = "#CCCCCC"
+            elseif color == "gray81" then
+              image.colors[chars] = "#CFCFCF"
+            elseif color == "gray82" then
+              image.colors[chars] = "#D1D1D1"
+            elseif color == "gray83" then
+              image.colors[chars] = "#D4D4D4"
+            elseif color == "gray84" then
+              image.colors[chars] = "#D6D6D6"
             elseif color == "gray85" then
               image.colors[chars] = "#D9D9D9"
+            elseif color == "gray86" then
+              image.colors[chars] = "#DBDBDB"
+            elseif color == "gray87" then
+              image.colors[chars] = "#DEDEDE"
+            elseif color == "gray88" then
+              image.colors[chars] = "#E0E0E0"
+            elseif color == "gray89" then
+              image.colors[chars] = "#E3E3E3"
+            elseif color == "gray90" then
+              image.colors[chars] = "#E5E5E5"
+            elseif color == "gray91" then
+              image.colors[chars] = "#E8E8E8"
+            elseif color == "gray92" then
+              image.colors[chars] = "#EBEBEB"
+            elseif color == "gray93" then
+              image.colors[chars] = "#EDEDED"
+            elseif color == "gray94" then
+              image.colors[chars] = "#F0F0F0"
+            elseif color == "gray95" then
+              image.colors[chars] = "#F2F2F2"
+            elseif color == "gray96" then
+              image.colors[chars] = "#F5F5F5"
+            elseif color == "gray97" then
+              image.colors[chars] = "#F7F7F7"
+            elseif color == "gray98" then
+              image.colors[chars] = "#FAFAFA"
+            elseif color == "gray99" then
+              image.colors[chars] = "#FCFCFC"
+            elseif color == "LightGray" then
+              image.colors[chars] = "#D3D3D3"
+            elseif color == "None" then
+              image.colors[chars] = "#FFFFFF"
+            elseif color == "white" then
+              image.colors[chars] = "white"
             else
               error("unknown color: " .. color)
             end
